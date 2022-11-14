@@ -7,7 +7,7 @@ const dbo = require('./db/conn')
 const { init } = require('./lib/near')
 
 const app = express()
-const port = 7777
+const port = process.env.PORT || 7777
 
 app.use(express.json())
 app.use(require('./routes/location'))
