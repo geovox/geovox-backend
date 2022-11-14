@@ -74,7 +74,7 @@ router.post('/locations', authenticate, async (req, res) => {
           },
         },
       ],
-      (err, result) => {
+      (err) => {
         if (err) {
           res.status(400).send('Error update locations!')
         } else {

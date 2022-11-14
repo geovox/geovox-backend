@@ -1,6 +1,5 @@
 require('dotenv').config()
 
-const bodyParser = require('body-parser')
 const express = require('express')
 const { ValidationError } = require('express-validation')
 const dbo = require('./db/conn')
@@ -14,7 +13,7 @@ app.use(require('./routes/location'))
 app.use(require('./routes/nft'))
 app.use(require('./routes/auth'))
 
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   if (err instanceof ValidationError) {
     return res.status(err.statusCode).json(err)
   }
