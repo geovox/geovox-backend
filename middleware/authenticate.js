@@ -1,6 +1,6 @@
 const Cryptr = require('cryptr')
 
-module.exports = async (req, res, next) => {
+module.exports = (req, res, next) => {
   try {
     const authHeader = req.headers.authorization
     const cryptr = new Cryptr(process.env.TOKEN_SECRET)

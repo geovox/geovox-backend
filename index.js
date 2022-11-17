@@ -13,12 +13,12 @@ app.use(require('./routes/location'))
 app.use(require('./routes/nft'))
 app.use(require('./routes/auth'))
 
-app.use((err, req, res) => {
+app.use((err, req, next, res) => {
   if (err instanceof ValidationError) {
     return res.status(err.statusCode).json(err)
   }
 
-  return res.status(500).json(err)
+  return req.status(500).json(err)
 })
 
 dbo.connectToServer(async (err) => {

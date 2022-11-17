@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Geovox",
+    "city": "Space",
+    "address": "Geovox Galaxy",
+    "description": "Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.",
+    "mediaHash": "bafkreidv5yv6a5q2wgelxjv6ew2shjqpodcs36nlybmyavonvfgq5rh7py"
+  },
+  {
+    "name": "Geovox",
+    "city": "Sun",
+    "address": "Geovox Galaxy",
+    "description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo.",
+    "mediaHash": "bafkreibt4tnyik6kvnrrzxhf3sqm4litd73d2rh3lc3eyxwblagensrdua"
+  },
+  {
+    "name": "Geovox",
+    "city": "Moon",
+    "address": "Geovox Galaxy",
+    "description": "Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede. Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus.",
+    "mediaHash": "bafkreidv5yv6a5q2wgelxjv6ew2shjqpodcs36nlybmyavonvfgq5rh7py"
+  }
+]

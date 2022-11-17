@@ -23,8 +23,19 @@ const loginValidation = {
   }),
 }
 
+const createnftValidation = {
+  body: Joi.object({
+    title: Joi.string().required(),
+    media: Joi.string().required(),
+    reference: Joi.string().required(),
+    copies: Joi.number().required(),
+    extra: Joi.string().required(),
+  }),
+}
+
 module.exports = {
   mintValidation,
   registerValidation,
   loginValidation,
+  createnftValidation,
 }
