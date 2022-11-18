@@ -5,7 +5,7 @@ const Cryptr = require('cryptr')
 const FormData = require('form-data')
 const { Decimal128 } = require('mongodb')
 const dbo = require('../db/conn')
-const data = require('../data/locationdata.json')
+const data = require('../data/locationdata2.json')
 
 const crypt = new Cryptr(process.env.TOKEN_SECRET)
 const BASE_URL = 'http://localhost:7777'
@@ -76,7 +76,11 @@ const createNFT = async ({
       },
     })
 
-    console.log('Success Created NFT', createRes.data.data.metadata.title)
+    console.log(
+      'Success Created NFT',
+      createRes.data.data.token_series_id,
+      createRes.data.data.metadata.title
+    )
   } catch (error) {
     console.log('error', error)
     console.log(error.response.data)
