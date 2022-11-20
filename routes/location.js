@@ -10,9 +10,9 @@ const generateNearestLocation = ({ latitude, longitude }) => {
   return new Array(3).fill(0).map((item, idx) => {
     return {
       latitude:
-        parseFloat(latitude) + (Math.random() - 0.5) * (idx + 1) * 0.0001,
+        parseFloat(latitude) + (Math.random() - 0.5) * (idx * 10 + 1) * 0.0001,
       longitude:
-        parseFloat(longitude) + (Math.random() - 0.5) * (idx + 1) * 0.0001,
+        parseFloat(longitude) + (Math.random() - 0.5) * (idx * 10 + 1) * 0.0001,
     }
   })
 }
